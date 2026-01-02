@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Easy Course App</title>
+  <meta charset="UTF-8">
+  <title>Course Selling App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Easy Course App</h1>
-<p>Welcome to course selling platform</p>
+  <div class="container">
+    <h1>Course Selling Platform</h1>
 
-<button onclick="showLogin()">Login</button>
+    <!-- LOGIN BUTTON -->
+    <button class="login-btn" onclick="showLogin()">Login</button>
 
-<div id="loginBox" style="display:none;">
-  <h2>Login</h2>
-  <input id="user" placeholder="Username"><br><br>
-  <input id="pass" type="password" placeholder="Password"><br><br>
-  <button onclick="login()">Submit</button>
-</div>
+    <!-- LOGIN BOX -->
+    <div id="loginBox" class="login-box">
+      <h2>Admin Login</h2>
 
-<script src="script.js"></script>
+      <input type="text" id="user" placeholder="Username">
+      <input type="password" id="pass" placeholder="Password">
+
+      <button onclick="login()">Submit</button>
+    </div>
+  </div>
+
+  <!-- JS CONNECT (VERY IMPORTANT) -->
+  <script src="script.js"></script>
 </body>
 </html>
